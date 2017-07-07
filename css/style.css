@@ -1,0 +1,12 @@
+body{
+  font-family: 'Open Sans';
+}
+
+/* Global */
+
+/* Header */
+
+header li{
+  float: left;
+  display: inline;
+}
