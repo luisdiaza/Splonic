@@ -5,7 +5,7 @@ body{
 /* Global */
 
 .container{
-  width: 80%;
+  width: 95%;
   margin: auto;
 }
 /* Header */
@@ -36,4 +36,20 @@ header li{
 header nav{
   float: right;
   padding: 36px 0 36px 0;
+}
+
+.sonic{
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  height: 100vh;
+  margin: 0;
+  max-width: none;
+  background-color: #e48d2e;
+}
+
+.sonicimg{
+  background-image: url(../imgs/sonic.png);
+  height:215px;
+  width: 200px;
 }
