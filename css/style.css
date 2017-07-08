@@ -19,16 +19,12 @@ header{
 header #branding{
   float: left;
   padding-left: 20px;
-  /*height: 146px;
-  width: 228px;*/
 }
 
 .logo{
   height: 110px;
   width: 171px;
-
 }
-
 
 header li{
   float: left;
@@ -41,20 +37,21 @@ header nav{
   float: right;
   padding: 36px 0 36px 0;
 }
+/* Section */
 
-.sonic{
-  width: 100%;
+.CallToAction{
+  width: 86.125%;
   padding: 0 7%;
   display: table;
-  height: 100vh;
+  height: 75vh;
   margin: 0;
   max-width: none;
   background-color: #ff8003;
+  border-bottom: #e8491d 3px solid;
 }
 
-.sonicimg{
-  background-image: url(../imgs/sonic.png);
-  background-size: cover;
-  height:1100px;
-  width: 1025px;
+.sonic{
+  float: left;
+  height: 480px;
+  width: 513px;
 }
