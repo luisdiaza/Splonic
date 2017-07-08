@@ -1,5 +1,5 @@
 body{
-  font-family: 'Open Sans';
+  font-family: 'Lato';
 }
 
 /* Global */
@@ -37,7 +37,7 @@ header nav{
   float: right;
   padding: 36px 0 36px 0;
 }
-/* Section */
+/* Sonic Section */
 
 .CallToAction{
   width: 86.125%;
@@ -54,4 +54,19 @@ header nav{
   float: left;
   height: 480px;
   width: 513px;
+}
+
+.CallToAction h1, p{
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.highlight{
+  color: #ff0000;
 }
