@@ -1,4 +1,5 @@
 Front-End Coding Challenge for Splash
+
 Technologies used: HTML5, CSS3, JavaScript, JQuery, ScrollReveal
 
 <!DOCTYPE html>

@@ -12,20 +12,24 @@ body{
 
 header{
   padding-top: 30px;
-  min-height: 150px;
+  min-height: 120px;
   border-bottom: #e8491d 3px solid;
 }
 
 header #branding{
   float: left;
   padding-left: 20px;
+  /*height: 146px;
+  width: 228px;*/
 }
 
 .logo{
-  background-image: url(../imgs/logo.png);
-  height: 146px;
-  width: 228px;
+  height: 110px;
+  width: 171px;
+
 }
+
+
 header li{
   float: left;
   display: inline;
@@ -45,11 +49,12 @@ header nav{
   height: 100vh;
   margin: 0;
   max-width: none;
-  background-color: #e48d2e;
+  background-color: #ff8003;
 }
 
 .sonicimg{
   background-image: url(../imgs/sonic.png);
-  height:215px;
-  width: 200px;
+  background-size: cover;
+  height:1100px;
+  width: 1025px;
 }
