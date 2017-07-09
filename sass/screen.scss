@@ -5,6 +5,7 @@
 
  @import "compass/css3";
 
+/* RSVP Button */
  // Variables
  $dark: #282828;
  $pink: #fc2161;
@@ -18,9 +19,6 @@
 
  // Get to business
  body {
-   //background-color: #777;
-   //background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAQAAABuBnYAAAAAU0lEQVQIHQXBwRGDIBAAwO2/AMcCDHAcPjIRxjJ8Je1kl1uqUgphsWu6w0sIG6npLpcUBql4e/wsVRKabrkNTacIYbMrwsF06rqUhsnXVKVT+Hj+Ue4rPSONk4kAAAAASUVORK5CYII=);
-   //padding-top: 80px;
    text-align: center;
  }
 
@@ -75,7 +73,7 @@
    @include transform(rotateX(0deg)translateZ(2.25em));
 
    &:before {
-     @include background-image(linear-gradient(45deg,       $pink-d 0%, #eb1f56 50%, #f91858 50%, $pink));
+     @include background-image(linear-gradient(45deg,       $pink-d 0%, #eb1f56 50%, #f91858 50%, $pink));//adds gradient to arrow part of flip button
    }
 
  }
@@ -88,4 +86,16 @@
    &:before {
      @include background-image(linear-gradient(45deg,       $green-d 0%, #76bc42 50%, #7dbd4c 50%, $green));
    }
+ }
+
+ /* Entertainment Section */
+ .entertainment{
+   /*width: 86.125%;
+   padding: 0 7%;
+   display: table;
+   height: 75vh;
+   margin: 0;
+   max-width: none;*/
+   @include background-image(linear-gradient(45deg,       $pink-d 0%, #eb1f56 50%, #f91858 50%, $pink));
+   //border-bottom: #e8491d 3px solid;
  }

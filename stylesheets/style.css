@@ -82,3 +82,14 @@ header nav{
   height: 480px;
   width: 513px;
 }
+
+/* Entertainment Section */
+.entertainment{
+  width: 86.125%;
+  padding: 0 7%;
+  display: table;
+  height: 75vh;
+  margin: 0;
+  max-width: none;
+  border-bottom: #e8491d 3px solid;
+}
