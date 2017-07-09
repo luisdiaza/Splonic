@@ -5,10 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Splonic</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <!--[if IE]>
+    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 </head>
 <body>
   <header>
@@ -18,7 +23,7 @@
       </div>
       <nav>
         <ul>
-          <li>Home</li>
+          <li>RSVP</li>
           <li>About</li>
           <li>Contact</li>
         </ul>
@@ -26,9 +31,17 @@
     </div>
   </header>
   <section class="CallToAction">
-    <img class="sonic" src="./imgs/sonic.png">
-    <h1>Alone on a Friday night? No problem! Join us on <span class="highlight">August 15, 2017</span> for the ultimate celebration of past and future!</h1>
-    <p>Sonic Mania is humanely raised, free range, organic, and chefs love it too!<p>
+    <div class="scontainer">
+      <img class="sonic" src="./imgs/sonic.png">
+    </div>
+    <h1>Alone on a Friday night? No problem! Join us on <br> <span class="highlight">August 15, 2017</span><br> for the ultimate celebration of past and future!</h1>
+    <p>Sonic Mania is humanely raised, free range, organic, and chefs love it too!</p>
+    <a href="#id" class="flipper-container">
+      <div id="id" class="flipper">
+        <div class="front-face" data-icon="&#x27a3;"><span data-hover="Clicked">RSVP</span></div>
+        <div class="back-face" data-icon="&#10003;">Good To Go!</div>
+      </div>
+    </a>
   </section>
 
   <script src="script.js"></script>

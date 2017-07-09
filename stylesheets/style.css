@@ -1,5 +1,8 @@
 body{
-  font-family: 'Lato';
+  font-family: 'Montserrat';
+  font-size: 100%;
+  /* Specifying the font-size in percent and em displays the same size in all major
+     browsers, and allows all browsers to resize the text! */
 }
 
 /* Global */
@@ -50,16 +53,11 @@ header nav{
   border-bottom: #e8491d 3px solid;
 }
 
-.sonic{
-  float: left;
-  height: 480px;
-  width: 513px;
-}
-
 .CallToAction h1, p{
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+  font-size: 1.6em;
   text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
@@ -67,6 +65,20 @@ header nav{
     1px 1px 0 #000;
 }
 
+.CallToAction h1{
+  padding-top: 2.5%;
+
+}
+
 .highlight{
   color: #ff0000;
+  font-size: 2.5em
+}
+.scontainer{
+  float: left;
+
+}
+.sonic{
+  height: 480px;
+  width: 513px;
 }
