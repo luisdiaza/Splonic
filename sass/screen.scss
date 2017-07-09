@@ -91,12 +91,12 @@
    }
  }
 /* Sonic Section */
-.CallToAction{
+#CallToAction{
   @include background-image(linear-gradient(45deg,       $orange-d 0%, #ff8003 50%, #ffc101 50%, $orange));
 }
 
  /* Entertainment Section */
- .entertainment{
+ #entertainment{
    @include background-image(linear-gradient(45deg,       $pink-d 0%, #eb1f56 50%, #f91858 50%, $pink));//adds gradient to background color of section
 
  }

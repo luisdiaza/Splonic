@@ -1,6 +1,8 @@
 body{
   font-family: 'Montserrat';
   font-size: 100%;
+  padding: 0;/* The following two lines removes white space on left, right, and bottom of the website*/
+  margin: 0;
   /* Specifying the font-size in percent and em displays the same size in all major
      browsers, and allows all browsers to resize the text! */
 }
@@ -9,7 +11,12 @@ body{
 
 .container{
   width: 95%;
-  margin: auto;
+  margin: auto //horizontally centers element within its container
+}
+
+ul{
+  margin: 0; /* removes padding and margins for all unordered lists*/
+  padding: 0;
 }
 /* Header */
 
@@ -30,7 +37,7 @@ header #branding{
 }
 
 header li{
-  /*float: left;*/
+  float: left;
   display: inline;
   text-transform: uppercase;
   padding: 0px 20px 0px 20px;
@@ -38,15 +45,16 @@ header li{
 
 header nav{
   float: right;
-  padding: 36px 0 36px 0;
+  margin: 50px 0 50px 0;
+
 }
 /* Sonic Section */
 
-.CallToAction{
+#CallToAction{
   width: 86.125%;
   padding: 0 7%;
   display: table;
-  height: 75vh;
+  height: 78vh;
   margin: 0;
   max-width: none;
   border-bottom: #ffffff 3px solid;
@@ -54,21 +62,17 @@ header nav{
   border-right: #e8491d 3px solid;
 }
 
-.CallToAction h1{
+#CallToAction h1{
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   font-size: 1.6em;
+  padding-top: 2.5%;
   text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
-}
-
-.CallToAction h1{
-  padding-top: 2.5%;
-
 }
 
 .highlight{
@@ -85,18 +89,18 @@ header nav{
 }
 
 /* Entertainment Section */
-.entertainment{
+#entertainment{
   width: 86.125%;
   padding: 0 7%;
   display: table;
-  height: 75vh;
+  height: 78vh;
   margin: 0;
   max-width: none;
   border-bottom: #ffffff 3px solid;
   border-left: #e8491d 3px solid;
   border-right: #e8491d 3px solid;
 }
-.entertainment h1{
+#entertainment h1{
   color: #ffffff;
   float: left;
   text-align: center;
@@ -109,7 +113,7 @@ header nav{
     1px 1px 0 #000;
 }
 
-.entertainment li{
+#entertainment li{
   display: inline;
 
 }
