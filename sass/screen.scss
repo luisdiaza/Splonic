@@ -6,15 +6,18 @@
  @import "compass/css3";
 
 /* RSVP Button */
- // Variables
+
+ // colors are first initialized here.  used later for gradient effect
  $dark: #282828;
  $pink: #fc2161;
  $pink-d: darken($pink, 15%);
  $green: #77BD42;
  $green-d: darken($green, 15%);
+ $orange: #ffc101;
+ $orange-d: #ff8003;
 
  // Fonts
- @import url(https://fonts.googleapis.com/css?family=Montserrat:400);
+ //@import url(https://fonts.googleapis.com/css?family=Montserrat:400);
 
 
  // Get to business
@@ -84,18 +87,16 @@
    @include transform(rotateX(-90deg)translateZ(2.25em));
 
    &:before {
-     @include background-image(linear-gradient(45deg,       $green-d 0%, #76bc42 50%, #7dbd4c 50%, $green));
+     @include background-image(linear-gradient(45deg,       $green-d 0%, #76bc42 50%, #7dbd4c 50%, $green));//adds gradient to checkmark part of button
    }
  }
+/* Sonic Section */
+.CallToAction{
+  @include background-image(linear-gradient(45deg,       $orange-d 0%, #ff8003 50%, #ffc101 50%, $orange));
+}
 
  /* Entertainment Section */
  .entertainment{
-   /*width: 86.125%;
-   padding: 0 7%;
-   display: table;
-   height: 75vh;
-   margin: 0;
-   max-width: none;*/
-   @include background-image(linear-gradient(45deg,       $pink-d 0%, #eb1f56 50%, #f91858 50%, $pink));
-   //border-bottom: #e8491d 3px solid;
+   @include background-image(linear-gradient(45deg,       $pink-d 0%, #eb1f56 50%, #f91858 50%, $pink));//adds gradient to background color of section
+
  }

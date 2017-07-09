@@ -30,7 +30,7 @@ header #branding{
 }
 
 header li{
-  float: left;
+  /*float: left;*/
   display: inline;
   text-transform: uppercase;
   padding: 0px 20px 0px 20px;
@@ -49,11 +49,12 @@ header nav{
   height: 75vh;
   margin: 0;
   max-width: none;
-  background-color: #ff8003;
-  border-bottom: #e8491d 3px solid;
+  border-bottom: #ffffff 3px solid;
+  border-left: #e8491d 3px solid;
+  border-right: #e8491d 3px solid;
 }
 
-.CallToAction h1, p{
+.CallToAction h1{
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -91,5 +92,24 @@ header nav{
   height: 75vh;
   margin: 0;
   max-width: none;
-  border-bottom: #e8491d 3px solid;
+  border-bottom: #ffffff 3px solid;
+  border-left: #e8491d 3px solid;
+  border-right: #e8491d 3px solid;
+}
+.entertainment h1{
+  color: #ffffff;
+  float: left;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.entertainment li{
+  display: inline;
+
 }
