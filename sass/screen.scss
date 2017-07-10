@@ -32,25 +32,21 @@ body {
   font-family: 'Montserrat', arial, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  width: 11em;
-  height: 4.5em;
+  width: 11em; height: 4.5em;
   background-color: $dark;
   box-shadow: 0 3px 5px $dark;
   @include transition(all 0.6s cubic-bezier(0.37, 0.74, 0.15, 1.65));
   @include transform-style(preserve-3d);
 
-  &:target {
+   &:target {
     @include transform(rotateX(90deg), translateZ(50%));
   }
 }
 
-.back-face,
-.front-face {
+.front-face, .back-face {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  width: 100%; height: 100%;
+  top: 0; left: 0;
   padding-right: 70px;
   letter-spacing: 2px;
   line-height: 4.5em;
@@ -61,10 +57,8 @@ body {
     content: attr(data-icon);
     font-size: 30px;
     position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 70px;
+    top: 0; right: 0;
+    height: 100%; width: 70px;
     border-radius: 0 2px 2px 0;
   }
 }
@@ -76,8 +70,9 @@ body {
   @include transform(rotateX(0deg)translateZ(2.25em));
 
   &:before {
-    @include background-image(linear-gradient(45deg, $pink-d 0%, #eb1f56 50%, #f91858 50%, $pink)); //adds gradient to arrow part of flip button
+    @include background-image(linear-gradient(45deg,       $pink-d 0%, #eb1f56 50%, #f91858 50%, $pink));
   }
+
 }
 
 .back-face {
@@ -86,7 +81,7 @@ body {
   @include transform(rotateX(-90deg)translateZ(2.25em));
 
   &:before {
-    @include background-image(linear-gradient(45deg, $green-d 0%, #76bc42 50%, #7dbd4c 50%, $green)); //adds gradient to checkmark part of button
+    @include background-image(linear-gradient(45deg,       $green-d 0%, #76bc42 50%, #7dbd4c 50%, $green));
   }
 }
 /* Sonic Section */
