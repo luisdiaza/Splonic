@@ -2,101 +2,98 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
- @import "compass/css3";
-
+@import "compass/css3";
 /* RSVP Button */
-
- // colors are first initialized here.  used later for gradient effect
- $dark: #282828;
- $pink: #fc2161;
- $pink-d: darken($pink, 15%);
- $green: #77BD42;
- $green-d: darken($green, 15%);
- $orange: #ffc101;
- $orange-d: #ff8003;
-
- // Fonts
- //@import url(https://fonts.googleapis.com/css?family=Montserrat:400);
-
-
- // Get to business
- body {
-   text-align: center;
- }
-
- .flipper-container {
-   text-align: center;
-   margin-top: 40px;
-   @include perspective(1000);
- }
-
- .flipper {
-   display: inline-block;
-   position: relative;
-   text-decoration: none;
-   font-family: 'Montserrat', arial, sans-serif;
-   font-weight: 400;
-   text-transform: uppercase;
-   width: 11em; height: 4.5em;
-   background-color: $dark;
-   box-shadow: 0 3px 5px $dark;
-   @include transition(all 0.6s cubic-bezier(0.37, 0.74, 0.15, 1.65));
-   @include transform-style(preserve-3d);
-
-    &:target {
-     @include transform(rotateX(90deg), translateZ(50%));
-   }
- }
-
- .front-face, .back-face {
-   position: absolute;
-   width: 100%; height: 100%;
-   top: 0; left: 0;
-   padding-right: 70px;
-   letter-spacing: 2px;
-   line-height: 4.5em;
-   @include border-radius(2px);
-   @include backface-visibility(hidden);
-
-   &:before {
-     content: attr(data-icon);
-     font-size: 30px;
-     position: absolute;
-     top: 0; right: 0;
-     height: 100%; width: 70px;
-     border-radius: 0 2px 2px 0;
-   }
- }
-
- .front-face {
-   background-color: $pink;
-   color: #fff;
-   text-shadow: 0 1px 1px darken($pink, 20%);
-   @include transform(rotateX(0deg)translateZ(2.25em));
-
-   &:before {
-     @include background-image(linear-gradient(45deg,       $pink-d 0%, #eb1f56 50%, #f91858 50%, $pink));//adds gradient to arrow part of flip button
-   }
-
- }
-
- .back-face {
-   background-color: $green;
-   color: $green-d;
-   @include transform(rotateX(-90deg)translateZ(2.25em));
-
-   &:before {
-     @include background-image(linear-gradient(45deg,       $green-d 0%, #76bc42 50%, #7dbd4c 50%, $green));//adds gradient to checkmark part of button
-   }
- }
-/* Sonic Section */
-#CallToAction{
-  @include background-image(linear-gradient(45deg,       $orange-d 0%, #ff8003 50%, #ffc101 50%, $orange));
+// colors are first initialized here.  used later for gradient effect
+$dark: #282828;
+$pink: #fc2161;
+$pink-d: darken($pink, 15%);
+$green: #77BD42;
+$green-d: darken($green, 15%);
+$orange: #ffc101;
+$orange-d: #ff8003;
+// Fonts
+//@import url(https://fonts.googleapis.com/css?family=Montserrat:400);
+// Get to business
+body {
+  text-align: center;
 }
 
- /* Entertainment Section */
- #entertainment{
-   @include background-image(linear-gradient(45deg,       $pink-d 0%, #eb1f56 50%, #f91858 50%, $pink));//adds gradient to background color of section
+.flipper-container {
+  text-align: center;
+  margin-top: 40px;
+  @include perspective(1000);
+}
 
- }
+.flipper {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  font-family: 'Montserrat', arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 11em;
+  height: 4.5em;
+  background-color: $dark;
+  box-shadow: 0 3px 5px $dark;
+  @include transition(all 0.6s cubic-bezier(0.37, 0.74, 0.15, 1.65));
+  @include transform-style(preserve-3d);
+
+  &:target {
+    @include transform(rotateX(90deg), translateZ(50%));
+  }
+}
+
+.back-face,
+.front-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-right: 70px;
+  letter-spacing: 2px;
+  line-height: 4.5em;
+  @include border-radius(2px);
+  @include backface-visibility(hidden);
+
+  &:before {
+    content: attr(data-icon);
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 70px;
+    border-radius: 0 2px 2px 0;
+  }
+}
+
+.front-face {
+  background-color: $pink;
+  color: #fff;
+  text-shadow: 0 1px 1px darken($pink, 20%);
+  @include transform(rotateX(0deg)translateZ(2.25em));
+
+  &:before {
+    @include background-image(linear-gradient(45deg, $pink-d 0%, #eb1f56 50%, #f91858 50%, $pink)); //adds gradient to arrow part of flip button
+  }
+}
+
+.back-face {
+  background-color: $green;
+  color: $green-d;
+  @include transform(rotateX(-90deg)translateZ(2.25em));
+
+  &:before {
+    @include background-image(linear-gradient(45deg, $green-d 0%, #76bc42 50%, #7dbd4c 50%, $green)); //adds gradient to checkmark part of button
+  }
+}
+/* Sonic Section */
+#CallToAction {
+  @include background-image(linear-gradient(45deg, $orange-d 0%, #ff8003 50%, #ffc101 50%, $orange));
+}
+/* Entertainment Section */
+#entertainment {
+  @include background-image(linear-gradient(45deg, $pink-d 0%, #eb1f56 50%, #f91858 50%, $pink)); //adds gradient to background color of section
+}
