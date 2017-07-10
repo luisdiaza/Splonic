@@ -1,4 +1,39 @@
+/* ScrollReveal */
+
 window.sr = ScrollReveal();//instantiates ScrollReveal
+
+/* Modal */
+
+// Get the modal
+var modal;
+
+// Get the button that opens the modal
+var btn;
+
+// Get the <span> element that closes the modal
+var span;
+
+// When the user clicks on the button, open the modal
+window.onload = function(){
+  btn = document.querySelector("#hack");
+  modal = document.getElementById("myModal");
+  span = document.getElementsByClassName("close")[0];
+  // btn.onclick = function() {
+  //   modal.style.display = "block";
+  // }
+  btn.addEventListener("click",function(e){
+    console.log(e,"clicked");
+    modal.style.display = "block";
+  });
+  span.onclick = function() {
+    modal.style.display = "none";// When the user clicks on <span> (x), close the modal
+  }
+  window.onclick = function(event) {// When the user clicks anywhere outside of the modal, close it
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+}
 
 /*$(function() {
   // Smooth Scrolling

@@ -15,7 +15,16 @@
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+
 <body>
+  <!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+</div>
   <header>
     <div class="container">
       <div id="branding">
@@ -37,17 +46,21 @@
       <h1>Sonic Mania is humanely raised, free range, and organic. Chefs love it too!</h1>
       <a href="#id" class="flipper-container">
         <div id="id" class="flipper">
-          <div class="front-face" data-icon="&#x27a3;"><span data-hover="Clicked">RSVP</span></div>
+
+          <!-- The following two lines use custom data attributes to create the flip button. Any attribute that starts with “data-” will be treated as a storage area
+          for private data (private in the sense that the end user can’t see it – it doesn’t affect layout or presentation). This allows you to write valid HTML markup while, simultaneously,
+           embedding data within your page.  The icons are created using the Dingbats unicode subset. -->
+
+          <div class="front-face" data-icon="&#x27a3;"><span id="hack" data-hover="Clicked">RSVP</span></div>
           <div class="back-face" data-icon="&#10003;">Good To Go!</div>
-        </div>
-      </a>
-    </div>
+
+    </div></a>
   </section>
   <section id="entertainment">
     <div class="container">
-      <h1>Entertainment will be provided by:</h1>
+      <h1>Entertainment will be provided by: <br></h1>
       <div class="videos">
-        <iframe class="video1"width="280" height="158" src="https://www.youtube.com/embed/mnfNWe-HHsI" frameborder="0" allowfullscreen></iframe>
+        <iframe class="video1" width="280" height="158" src="https://www.youtube.com/embed/mnfNWe-HHsI" frameborder="0" allowfullscreen></iframe>
         <h1>Hyper Potions</h1>
       </div>
       <div class="videos">
@@ -58,7 +71,7 @@
         <iframe width="280" height="158" src="https://www.youtube.com/embed/jV4WrCW-5Lw" frameborder="0" allowfullscreen></iframe>
         <h1>Tee Lopes</h1>
       </div>
-      <h1 >Can't make it? Don't worry! Sega and Data Discs have partnered together to provide a vinyl album of the event's music!</h1>
+      <h1 class="vinyl">Can't make it? Don't worry! Sega and Data Discs have partnered together to provide a vinyl album of the event's music!</h1>
     </div>
   </section>
   <section id="art">
@@ -88,4 +101,5 @@
   </section>
   <script src="script.js"></script>
 </body>
+
 </html>
