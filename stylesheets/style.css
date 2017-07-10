@@ -133,11 +133,11 @@ header nav{
   width: 86.125%;
   padding: 0 7%;
   display: table;
+  text-align: center;
   height: 78vh;
   margin: 0;
   max-width: none;
   border-top: #ffffff 3px solid;
-  border-bottom: #ffffff 3px solid;
 }
 
 #art h1{
@@ -152,9 +152,16 @@ header nav{
 }
 
 #art .artists{
-  margin-top: 1.6875%;
+  margin-top: 6.375%;
   float: left;
   text-align: center;
-  width: 30%;
-  padding: 10px;
+  width: 15%;
+  padding: 1.5%;
+  margin-left: .875%;
+  margin-right: .875%;
+}
+
+.creatives{
+  height: 100%;
+  width: 100%;
 }
