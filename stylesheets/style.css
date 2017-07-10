@@ -36,6 +36,12 @@ header #branding{
   width: 171px;
 }
 
+header a{
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 header li{
   float: left;
   display: inline;
