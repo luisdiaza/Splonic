@@ -93,7 +93,6 @@ header nav{
   max-width: none;
   border-top: #ffffff 3px solid;
   border-bottom: #ffffff 3px solid;
-
 }
 #entertainment .videos h1{
   color: #ffffff;
@@ -119,7 +118,7 @@ header nav{
 }
 
 #entertainment .videos{
-  margin-top: 3.375%;
+  margin-top: 1.6875%;
   float: left;
   text-align: center;
   width: 30%;
@@ -128,4 +127,34 @@ header nav{
 
 #entertainment .videos iframe{
   width: 90%;
+}
+/* Art Section*/
+#art{
+  width: 86.125%;
+  padding: 0 7%;
+  display: table;
+  height: 78vh;
+  margin: 0;
+  max-width: none;
+  border-top: #ffffff 3px solid;
+  border-bottom: #ffffff 3px solid;
+}
+
+#art h1{
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#art .artists{
+  margin-top: 1.6875%;
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
 }

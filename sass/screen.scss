@@ -12,6 +12,9 @@ $green: #77BD42;
 $green-d: darken($green, 15%);
 $orange: #ffc101;
 $orange-d: #ff8003;
+$teal: #71d49d;
+$teal-d: darken($teal, 15%);
+//$teal-d: #288451;
 // Fonts
 //@import url(https://fonts.googleapis.com/css?family=Montserrat:400);
 // Get to business
@@ -91,4 +94,9 @@ body {
 /* Entertainment Section */
 #entertainment {
   @include background-image(linear-gradient(45deg, $pink-d 0%, #eb1f56 50%, #f91858 50%, $pink)); //adds gradient to background color of section
+}
+
+/* Art Section */
+#art{
+  @include background-image(linear-gradient(45deg, $teal-d 0%, #3abf75 50%, #71d49d 50%, $teal));
 }
