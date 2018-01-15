@@ -26,7 +26,7 @@ header{
   border-bottom: #e8491d 3px solid;
 }
 
-header #branding{
+header .branding{
   float: left;
   padding-left: 20px;
 }
@@ -56,7 +56,7 @@ header nav{
 }
 /* Sonic Section */
 
-#CallToAction{
+.CallToAction{
   width: 86.125%;
   padding: 0 7%;
   display: table;
@@ -65,7 +65,7 @@ header nav{
   max-width: none;
 }
 
-#CallToAction h1{
+.CallToAction h1{
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -90,7 +90,7 @@ header nav{
 }
 
 /* Entertainment Section */
-#entertainment{
+.entertainment{
   width: 86.125%;
   padding: 0 7%;
   display: table;
@@ -100,7 +100,7 @@ header nav{
   border-top: #ffffff 3px solid;
   border-bottom: #ffffff 3px solid;
 }
-#entertainment  h1{
+.entertainment  h1{
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -112,7 +112,7 @@ header nav{
     1px 1px 0 #000;
 }
 
-#entertainment .videos{
+.entertainment .videos{
   margin-top: 1.6875%;
   float: left;
   text-align: center;
@@ -120,11 +120,11 @@ header nav{
   padding: 10px;
 }
 
-#entertainment .videos iframe{
+.entertainment .videos iframe{
   width: 90%;
 }
 /* Art Section*/
-#art{
+.art{
   width: 86.125%;
   padding: 0 7%;
   display: table;
@@ -136,7 +136,7 @@ header nav{
 
 }
 
-#art h1{
+.art h1{
   color: #ffffff;
   text-transform: uppercase;
   font-size: 1.6em;
@@ -147,7 +147,7 @@ header nav{
     1px 1px 0 #000;
 }
 
-#art .artists{
+.art .artists{
   margin-top: 6.375%;
   float: left;
   text-align: center;
