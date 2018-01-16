@@ -25,7 +25,17 @@ sr.reveal('.flipper-container', {
   viewFactor: 0.2
 });
 
+//Define UI variables
+const arrow = document.querySelector('.flipper-container')
 
+//Listen for open click
+arrow.addEventListener('click',function(e) {
+    console.log(e.target.className);
+    if(e.target.className === "front-face"){
+        //window.location.reload();
+        alert("Hello, I am an alert!");
+    }
+});
 
 /*$(function() {
   // Smooth Scrolling

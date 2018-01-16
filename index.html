@@ -1,102 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Splonic</title>
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
-    <!--[if IE]>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Splonic</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <!--[if IE]>
     <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <div class="branding">
-                <img class="logo" src="./imgs/logo.png">
-            </div>
-            <nav>
-                <ul>
-                    <a href="#CallToAction">
-                        <li>RSVP</li>
-                    </a>
-                    <a href="#entertainment">
-                        <li>Entertainment</li>
-                    </a>
-                    <a href="#art">
-                        <li>Artists</li>
-                    </a>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section class="CallToAction">
-        <div class="container">
-            <img class="sonic" src="./imgs/sonic.png">
-            <h1>Alone on a Friday night? No problem! Join us on <br> <span class="highlight">August 15, 2017</span><br> for the ultimate celebration of past and future!</h1>
-            <h1>Sonic Mania is humanely raised, free range, and organic. Chefs love it too!</h1>
-            <a href="#id" class="flipper-container">
-                <div class="id" class="flipper">
 
-                    <!-- The following two lines use custom data attributes to create the flip button. Any attribute that starts with “data-” will be treated as a storage area
+<body>
+  <header>
+    <div class="container">
+      <div class="branding">
+        <img class="logo" src="./imgs/logo.png">
+      </div>
+      <nav>
+        <ul>
+          <a href="#CallToAction"><li>RSVP</li></a>
+          <a href="#entertainment"><li>Entertainment</li></a>
+          <a href="#art"><li>Artists</li></a>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="CallToAction">
+    <div class="container">
+      <img class="sonic" src="./imgs/sonic.png">
+      <h1>Alone on a Friday night? No problem! Join us on <br> <span class="highlight">August 15, 2017</span><br> for the ultimate celebration of past and future!</h1>
+      <h1>Sonic Mania is humanely raised, free range, and organic. Chefs love it too!</h1>
+      <a href="#id" class="flipper-container">
+        <div id="id" class="flipper">
+
+          <!-- The following two lines use custom data attributes to create the flip button. Any attribute that starts with “data-” will be treated as a storage area
           for private data (private in the sense that the end user can’t see it – it doesn’t affect layout or presentation). This allows you to write valid HTML markup while, simultaneously,
            embedding data within your page.  The icons are created using the Dingbats unicode subset. -->
 
-                    <div class="front-face" data-icon="&#x27a3;"><span class="hack" data-hover="Clicked">RSVP</span></div>
-                    <div class="back-face" data-icon="&#10003;">Good To Go!</div>
+          <div class="front-face" data-icon="&#x27a3;"><span data-hover="Clicked">RSVP</span></div>
+          <div class="back-face" data-icon="&#10003;">Good To Go!</div>
 
-                </div>
-            </a>
-    </section>
-    <section class="entertainment">
-        <div class="container">
-            <h1>Entertainment will be provided by: <br></h1>
-            <div class="videos">
-                <iframe class="video1" width="280" height="158" src="https://www.youtube.com/embed/mnfNWe-HHsI" frameborder="0" allowfullscreen></iframe>
-                <h1>Hyper Potions</h1>
-            </div>
-            <div class="videos">
-                <iframe width="280" height="158" src="https://www.youtube.com/embed/_cB3HXVvm0g" frameborder="0" allowfullscreen></iframe>
-                <h1>Nitro Fun</h1>
-            </div>
-            <div class="videos">
-                <iframe width="280" height="158" src="https://www.youtube.com/embed/jV4WrCW-5Lw" frameborder="0" allowfullscreen></iframe>
-                <h1>Tee Lopes</h1>
-            </div>
-            <h1 class="vinyl">Can't make it? Don't worry! Sega and Data Discs have partnered together to provide a vinyl album of the event's music!</h1>
-        </div>
-    </section>
-    <section class="art">
-        <div class="container">
-            <h1>Featuring appearances by team mania: </h1>
-            <div class="artists">
-                <img class="creatives" src="./imgs/rafaknight.png">
-                <h1>Rafa Knight</h1>
-            </div>
-            <div class="artists">
-                <img class="creatives" src="./imgs/tyson.png">
-                <h1>Tyson Hesse</h1>
-            </div>
-            <div class="artists">
-                <img class="creatives" src="./imgs/TBSF.png">
-                <h1>The Best Sonic Fan</h1>
-            </div>
-            <div class="artists">
-                <img class="creatives" src="./imgs/whitehead.png">
-                <h1>The Taxman</h1>
-            </div>
-            <div class="artists">
-                <img class="creatives" src="./imgs/stealth.png">
-                <h1>Stealth</h1>
-            </div>
-        </div>
-    </section>
-    <script src="app.js"></script>
+    </div> </a>
+  </section>
+  <section class="entertainment">
+    <div class="container">
+      <h1>Entertainment will be provided by: <br></h1>
+      <div class="videos">
+        <iframe class="video1" width="280" height="158" src="https://www.youtube.com/embed/mnfNWe-HHsI" frameborder="0" allowfullscreen></iframe>
+        <h1>Hyper Potions</h1>
+      </div>
+      <div class="videos">
+        <iframe width="280" height="158" src="https://www.youtube.com/embed/_cB3HXVvm0g" frameborder="0" allowfullscreen></iframe>
+        <h1>Nitro Fun</h1>
+      </div>
+      <div class="videos">
+        <iframe width="280" height="158" src="https://www.youtube.com/embed/jV4WrCW-5Lw" frameborder="0" allowfullscreen></iframe>
+        <h1>Tee Lopes</h1>
+      </div>
+      <h1 class="vinyl">Can't make it? Don't worry! Sega and Data Discs have partnered together to provide a vinyl album of the event's music!</h1>
+    </div>
+  </section>
+  <section class="art">
+    <div class="container">
+      <h1>Featuring appearances by team mania: </h1>
+      <div class="artists">
+        <img class="creatives" src="./imgs/rafaknight.png">
+        <h1>Rafa Knight</h1>
+      </div>
+      <div class="artists">
+        <img class="creatives" src="./imgs/tyson.png">
+        <h1>Tyson Hesse</h1>
+      </div>
+      <div class="artists">
+        <img class="creatives" src="./imgs/TBSF.png">
+        <h1>The Best Sonic Fan</h1>
+      </div>
+      <div class="artists">
+        <img class="creatives" src="./imgs/whitehead.png">
+        <h1>The Taxman</h1>
+      </div>
+      <div class="artists">
+        <img class="creatives" src="./imgs/stealth.png">
+        <h1>Stealth</h1>
+      </div>
+    </div>
+  </section>
+  <script src="app.js"></script>
 </body>
+
 </html>

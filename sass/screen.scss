@@ -3,7 +3,6 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import "compass/css3";
-
 /* RSVP Button */
 // colors are first initialized here.  used later for gradient effect
 $dark: #282828;
@@ -18,7 +17,6 @@ $teal-d: darken($teal, 15%);
 //$teal-d: #288451;
 // Fonts
 //@import url(https://fonts.googleapis.com/css?family=Montserrat:400);
-
 // Get to business
 body {
   text-align: center;
