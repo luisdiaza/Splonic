@@ -26,11 +26,15 @@
 // });
 
 //Define UI variables
+const unorderedList = document.querySelector('.unorderedList');
 const callToAction = document.querySelector('.CallToAction');
 const entertainment = document.querySelector('.entertainment');
 const artistes = document.querySelector('.art');
 const arrow = document.querySelector('.flipper-container');
-const unorderedList = document.querySelector('.unorderedList');
+const modal = document.querySelector('.modal');
+const closeBtn = document.querySelector('.closeBtn');
+
+
 /* Event Handlers*/
 
 // Scroll to CallToAction section when RSVP is clicked in nav bar
@@ -56,9 +60,20 @@ unorderedList.addEventListener('click', function(e){
 
 //Opens modal when RSVP button is clicked
 arrow.addEventListener('click',function(e) {
-    console.log(e.target.className);
+    // console.log(e.target.className);
     if(e.target.className === "front-face") {
         //window.location.reload();
-        alert("Hello, I am an alert!");
+        // alert("Hello, I am an alert!");
+        modal.style.display = 'block'; //opens modal
+    }
+});
+
+closeBtn.addEventListener('click', function (e) { // closes modal when "x" is pressed in modal
+    modal.style.display = 'none';
+});
+
+window.addEventListener('click', function (e) {
+    if(e.target === modal) {
+        modal.style.display = 'none';
     }
 });
