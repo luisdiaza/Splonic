@@ -1,16 +1,27 @@
 body{
   font-family: 'Montserrat';
-  font-size: 100%;
-  padding: 0;/* The following two lines removes white space on left, right, and bottom of the website*/
-  margin: 0;
   /* Specifying the font-size in percent and em displays the same size in all major
      browsers, and allows all browsers to resize the text! */
+  font-size: 100%;
+  box-sizing: border-box;
+  padding: 0;/* The following two lines removes white space on left, right, and bottom of the website*/
+  margin: 0;
+  min-height: 100vh; /*the height of body will never be less than 100% of the viewport*/
+  width: 100%;
+
+}
+html {
+    height: 100%;
+    /* margin: 0;
+    padding: 0; */
 }
 
 /* Global */
 
 .container{
-  width: 95%;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 10px 0 10px;
   margin: auto; //horizontally centers element within its container
 }
 
@@ -21,14 +32,14 @@ ul{
 /* Header */
 
 header{
-  padding-top: 30px;
-  min-height: 120px;
-  border-bottom: #e8491d 3px solid;
+  /* padding-top: 30px; */
+  min-height: 130px;
 }
 
 header .branding{
   float: left;
   padding-left: 20px;
+  margin-top: 1%;
 }
 
 .logo{
@@ -52,18 +63,36 @@ header li{
 
 header nav{
   float: right;
-  margin: 50px 0 50px 0;
+  margin-top: 4.5%;
+  /* margin: 50px 0 50px 0; */
 
 }
 /* Sonic Section */
 
 .CallToAction{
-  width: 86.125%;
+  /* width: 86.125%; */
   padding: 0 7%;
-  display: table;
-  height: 78vh;
+  /* display: table; */
   margin: 0;
   max-width: none;
+  border-top: #e8491d 3px solid;
+  /* overflow:hidden; */
+  /* clear: both; */
+}
+.sub-container {
+    float: left;
+    width: 45%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* clear-fix solution
+    Floated elements don't expand the height or width of their parents leading to a div of height 0
+*/
+.CallToAction:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .CallToAction h1{
@@ -85,9 +114,9 @@ header nav{
 }
 
 .sonic{
-  height: 480px;
-  width: 513px;
-  float: left;
+  height: auto;
+  width: 75%;
+  /* float: left; */
 }
 
 .modal {
@@ -151,52 +180,80 @@ header nav{
 
 /* Entertainment Section */
 .entertainment{
-  width: 86.125%;
+  /* width: 86.125%; */
   padding: 0 7%;
-  display: table;
-  height: 78vh;
+  /* display: table; */
   margin: 0;
   max-width: none;
   border-top: #ffffff 3px solid;
   border-bottom: #ffffff 3px solid;
 }
-.entertainment  h1{
-  color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1.6em;
-  text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+
+.entertainment:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.entertainment .videos{
-  margin-top: 1.6875%;
-  float: left;
-  text-align: center;
-  width: 30%;
-  padding: 10px;
+.video-list li  {
+    display: inline-block;
+    /* padding: 10px 20px 0px 20px; */
+    /* text-align: center; */
 }
 
-.entertainment .videos iframe{
-  width: 90%;
+.videos {
+    width: auto;
+    margin-left: 0 15% 0 15%;
+}
+
+.entertainment h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
+.captions li{
+    text-align: center;
+    display: inline-block;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+    padding: 0 100px 0 60px;
+}
+.vinyl {
+    margin-top: 5%;
+
 }
 /* Art Section*/
 .art{
-  width: 86.125%;
+  /* width: 86.125%; */
   padding: 0 7%;
-  display: table;
-  text-align: center;
-  height: 78vh;
+  /* display: table; */
+  /* text-align: center; */
   margin: 0;
   max-width: none;
   border-top: #ffffff 3px solid;
-
+}
+.art::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.artists li {
+    display: inline;
 }
 
-.art h1{
+  .art h1{
   color: #ffffff;
   text-transform: uppercase;
   font-size: 1.6em;
@@ -206,19 +263,59 @@ header nav{
     -1px 1px 0 #000,
     1px 1px 0 #000;
 }
-
-.art .artists{
-  margin-top: 6.375%;
-  float: left;
-  text-align: center;
-  width: 15%;
-  padding: 1.5%;
-  margin-left: .875%;
-  margin-right: .875%;
+.artisan {
+    padding-left: 13%;
+    width: auto;
+    /* width: 40%; */
 }
 
 .creatives{
-  height: 100%;
-  width: 100%;
+  height: 120px;
+  width: 120px;;
+  padding: 0 36px 0 32px;
+  /* margin-left: 15%; */
   border-radius: 50%;
+  display: inline;
 }
+
+.names li {
+    display: inline;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    padding: 0 35px 0 10px;
+    text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width : 768px) {
+    .CallToAction, .entertainment, .art {
+        padding: 0 90%;
+    }
+}
+
+/* @media only screen and (max-width : 767px) {
+    header .unorderedList, header .branding  {
+        display: none; */
+        /* padding: 30px 35.27% 0 0; */
+    /* }
+
+    .entertainment, .art {
+        padding: 0 44.3%;
+    }
+
+    .header {
+        padding: 0 44.3%;
+    }
+}
+
+@media (min-width: 768px) {
+    .entertainment, .art { */
+        /* padding: 0 35.277%; */
+    /* }
+} */

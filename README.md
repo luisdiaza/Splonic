@@ -2,4 +2,4 @@
 
 Images are optimized and design flows responsively all the way from big screens to mobile.
 
-**Technologies used**: ***HTML5***, ***CSS3 (SASS)***, and ***vanilla JavaScript***.
+**Technologies used**: ***HTML5***, ***CSS3***, and ***vanilla JavaScript***.

@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <div class="branding">
                 <img class="logo" src="./imgs/logo.png">
@@ -34,34 +34,37 @@
     </header>
     <section class="CallToAction">
         <div class="container">
-            <img class="sonic" src="./imgs/sonic.png">
-            <h1>Alone on a Friday night? No problem! Join us on <br> <span class="highlight">August 15, 2017</span><br> for the ultimate celebration of past and future!</h1>
-            <h1>Sonic Mania is humanely raised, free range, and organic. Chefs love it too!</h1>
-            <a href="#id" class="flipper-container">
-                <div id="id" class="flipper">
+            <div class="sub-container">
+                <img class="sonic" src="./imgs/sonic.png">
+            </div>
+            <div class="sub-container">
+                <h1>Alone on a Friday night? No problem! Join us on <br> <span class="highlight">August 15, 2017</span><br> for the ultimate celebration of past and future!</h1>
+                <h1>Sonic Mania is humanely raised, free range, and organic. Chefs love it too!</h1>
+                <a href="#id" class="flipper-container">
+                    <div id="id" class="flipper">
 
-                    <!-- The following two lines use custom data attributes to create the flip button. Any attribute that starts with “data-” will be treated as a storage area
-          for private data (private in the sense that the end user can’t see it – it doesn’t affect layout or presentation). This allows you to write valid HTML markup while, simultaneously,
-           embedding data within your page.  The icons are created using the Dingbats unicode subset. -->
+                        <!-- The following two lines use custom data attributes to create the flip button. Any attribute that starts with “data-” will be treated as a storage area
+                        for private data (private in the sense that the end user can’t see it – it doesn’t affect layout or presentation). This allows you to write valid HTML markup while, simultaneously,
+                        embedding data within your page.  The icons are created using the Dingbats unicode subset. -->
 
-                    <div class="front-face" data-icon="&#x27a3;"><span data-hover="Clicked">RSVP</span></div>
-                    <div class="back-face" data-icon="&#10003;">Good To Go!</div>
-
-                </div>
-            </a>
-            <div class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <span class="closeBtn">&times;</span>
-                        <h2>Please RSVP Through One Of Our Partners!</h2>
+                        <div class="front-face" data-icon="&#x27a3;"><span data-hover="Clicked">RSVP</span></div>
+                        <div class="back-face" data-icon="&#10003;">Good To Go!</div>
                     </div>
-                    <div class="modal-body">
-                        <p>Hello, I am a Modal!</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <h3>Thank You! We Look Forward To Seeing You At The Event!</h3>
+                </a>
+                <div class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="closeBtn">&times;</span>
+                            <h2>Please RSVP Through One Of Our Partners!</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Hello, I am a Modal!</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <h3>Thank You! We Look Forward To Seeing You At The Event!</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -69,25 +72,43 @@
     </section>
     <section class="entertainment">
         <div class="container">
-            <h1>Entertainment will be provided by: <br></h1>
-            <div class="videos">
-                <iframe class="video1" width="280" height="158" src="https://www.youtube.com/embed/mnfNWe-HHsI" frameborder="0" allowfullscreen></iframe>
-                <h1>Hyper Potions</h1>
+            <div class="sub-container videos">
+                <h1>Entertainment will be provided by:</h1>
+                <ul class="video-list">
+                    <li><iframe class="video1" width="280" height="158" src="https://www.youtube.com/embed/mnfNWe-HHsI" frameborder="0" allowfullscreen></iframe></li>
+                    <li><iframe width="280" height="158" src="https://www.youtube.com/embed/_cB3HXVvm0g" frameborder="0" allowfullscreen></iframe></li>
+                    <li><iframe width="280" height="158" src="https://www.youtube.com/embed/N6W1OOeC9_o" frameborder="0" allowfullscreen></iframe></li>
+                </ul>
+                <ul class="captions">
+                    <li>Hyper Potions</li>
+                    <li>Nitro Fun</li>
+                    <li>Tee Lopes</li>
+                </ul>
+                <h1 class="vinyl">Can't make it? Don't worry! Sega and Data Discs have partnered together to provide a vinyl album of the event's music!</h1>
             </div>
-            <div class="videos">
-                <iframe width="280" height="158" src="https://www.youtube.com/embed/_cB3HXVvm0g" frameborder="0" allowfullscreen></iframe>
-                <h1>Nitro Fun</h1>
-            </div>
-            <div class="videos">
-                <iframe width="280" height="158" src="https://www.youtube.com/embed/jV4WrCW-5Lw" frameborder="0" allowfullscreen></iframe>
-                <h1>Tee Lopes</h1>
-            </div>
-            <h1 class="vinyl">Can't make it? Don't worry! Sega and Data Discs have partnered together to provide a vinyl album of the event's music!</h1>
         </div>
     </section>
     <section class="art">
         <div class="container">
-            <h1>Featuring appearances by team mania: </h1>
+            <div class="sub-container artisan">
+                <h1>Featuring appearances by team mania:</h1>
+                <ul class="artists">
+                    <li><img class="creatives" src="./imgs/rafaknight.png"></li>
+                    <li><img class="creatives" src="./imgs/tyson.png"></li>
+                    <li><img class="creatives" src="./imgs/TBSF.png"></li>
+                    <li><img class="creatives" src="./imgs/whitehead.png"></li>
+                    <li><img class="creatives" src="./imgs/stealth.png"></li>
+                </ul>
+                <ul class="names">
+                    <li>Rafa Knight</li>
+                    <li>Tyson Hesse</li>
+                    <li>TBSF</li>
+                    <li>The Taxman</li>
+                    <li>Stealth</li>
+                </ul>
+
+            </div>
+            <!-- <h1>Featuring appearances by team mania: </h1>
             <div class="artists">
                 <img class="creatives" src="./imgs/rafaknight.png">
                 <h1>Rafa Knight</h1>
@@ -106,7 +127,7 @@
             </div>
             <div class="artists">
                 <img class="creatives" src="./imgs/stealth.png">
-                <h1>Stealth</h1>
+                <h1>Stealth</h1> -->
             </div>
         </div>
     </section>
