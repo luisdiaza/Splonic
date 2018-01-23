@@ -1,4 +1,4 @@
-body{
+body {
   font-family: 'Montserrat';
   /* Specifying the font-size in percent and em displays the same size in all major
      browsers, and allows all browsers to resize the text! */
@@ -6,54 +6,49 @@ body{
   box-sizing: border-box;
   padding: 0;/* The following two lines removes white space on left, right, and bottom of the website*/
   margin: 0;
-  min-height: 100vh; /*the height of body will never be less than 100% of the viewport*/
   width: 100%;
-
 }
 html {
     height: 100%;
-    /* margin: 0;
-    padding: 0; */
 }
 
 /* Global */
 
-.container{
+.container {
   width: 100%;
   max-width: 1200px;
-  padding: 0 10px 0 10px;
-  margin: auto; //horizontally centers element within its container
+  /* padding: 0 10px 0 10px; */
+  margin: auto; /*horizontally centers element within its container*/
 }
 
-ul{
+ul {
   margin: 0; /* removes padding and margins for all unordered lists*/
   padding: 0;
 }
 /* Header */
 
-header{
-  /* padding-top: 30px; */
+header {
   min-height: 130px;
 }
 
-header .branding{
+header .branding {
   float: left;
   padding-left: 20px;
   margin-top: 1%;
 }
 
-.logo{
+.logo {
   height: 110px;
   width: 171px;
 }
 
-header a{
+header a {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-header li{
+header li {
   float: left;
   display: inline;
   text-transform: uppercase;
@@ -61,31 +56,17 @@ header li{
   cursor: pointer;
 }
 
-header nav{
+header nav {
   float: right;
   margin-top: 4.5%;
-  /* margin: 50px 0 50px 0; */
-
 }
 /* Sonic Section */
 
-.CallToAction{
-  /* width: 86.125%; */
-  padding: 0 7%;
-  /* display: table; */
+.CallToAction {
   margin: 0;
   max-width: none;
   border-top: #e8491d 3px solid;
-  /* overflow:hidden; */
-  /* clear: both; */
 }
-.sub-container {
-    float: left;
-    width: 45%;
-    position: relative;
-    box-sizing: border-box;
-}
-
 /* clear-fix solution
     Floated elements don't expand the height or width of their parents leading to a div of height 0
 */
@@ -95,7 +76,7 @@ header nav{
     clear: both;
 }
 
-.CallToAction h1{
+.CallToAction h1 {
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -108,15 +89,15 @@ header nav{
     1px 1px 0 #000;
 }
 
-.highlight{
+.highlight {
   color: #ff0000;
   font-size: 2.5em;
 }
 
-.sonic{
-  height: auto;
-  width: 75%;
-  /* float: left; */
+.sonic {
+  height: 50%;
+  width: 50%;
+  float: left;
 }
 
 .modal {
@@ -140,21 +121,21 @@ header nav{
     animation-duration: 1s;
 }
 
-.modal-header h2, .modal-footer h3{
+.modal-header h2, .modal-footer h3 {
   margin: 0;
 }
 
-.modal-header{
+.modal-header {
   background: coral;
   padding: 15px;
   color: #fff;
 }
 
-.modal-body{
+.modal-body {
   padding: 10px 20px;
 }
 
-.modal-footer{
+.modal-footer {
   background: coral;
   padding: 10px;
   color: #fff;
@@ -179,10 +160,7 @@ header nav{
 }
 
 /* Entertainment Section */
-.entertainment{
-  /* width: 86.125%; */
-  padding: 0 7%;
-  /* display: table; */
+.entertainment {
   margin: 0;
   max-width: none;
   border-top: #ffffff 3px solid;
@@ -197,13 +175,11 @@ header nav{
 
 .video-list li  {
     display: inline-block;
-    /* padding: 10px 20px 0px 20px; */
-    /* text-align: center; */
 }
 
 .videos {
     width: auto;
-    margin-left: 0 15% 0 15%;
+    margin: 0 8% ;
 }
 
 .entertainment h1 {
@@ -217,9 +193,8 @@ header nav{
       1px 1px 0 #000;
 }
 
-.captions li{
+.video-list li p, .artist-list li p {
     text-align: center;
-    display: inline-block;
     color: #ffffff;
     text-transform: uppercase;
     font-size: 1.6em;
@@ -228,18 +203,13 @@ header nav{
       1px -1px 0 #000,
       -1px 1px 0 #000,
       1px 1px 0 #000;
-    padding: 0 100px 0 60px;
 }
 .vinyl {
-    margin-top: 5%;
+    margin-top: 2%;
 
 }
 /* Art Section*/
 .art{
-  /* width: 86.125%; */
-  padding: 0 7%;
-  /* display: table; */
-  /* text-align: center; */
   margin: 0;
   max-width: none;
   border-top: #ffffff 3px solid;
@@ -249,11 +219,20 @@ header nav{
     display: table;
     clear: both;
 }
-.artists li {
-    display: inline;
+.artist-list li {
+    display: inline-block;
 }
 
-  .art h1{
+.artist-list li p {
+    padding: 0 4px;
+}
+
+.artists {
+    width: auto;
+    margin: 0 0%;
+}
+
+  .art h1 {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 1.6em;
@@ -263,59 +242,15 @@ header nav{
     -1px 1px 0 #000,
     1px 1px 0 #000;
 }
-.artisan {
-    padding-left: 13%;
-    width: auto;
-    /* width: 40%; */
-}
 
-.creatives{
+.creatives {
   height: 120px;
   width: 120px;;
-  padding: 0 36px 0 32px;
-  /* margin-left: 15%; */
   border-radius: 50%;
-  display: inline;
-}
-
-.names li {
-    display: inline;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 1.6em;
-    padding: 0 35px 0 10px;
-    text-shadow:
-      -1px -1px 0 #000,
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-      1px 1px 0 #000;
 }
 
 /* Media Queries */
 
 @media only screen and (max-width : 768px) {
-    .CallToAction, .entertainment, .art {
-        padding: 0 90%;
-    }
+
 }
-
-/* @media only screen and (max-width : 767px) {
-    header .unorderedList, header .branding  {
-        display: none; */
-        /* padding: 30px 35.27% 0 0; */
-    /* }
-
-    .entertainment, .art {
-        padding: 0 44.3%;
-    }
-
-    .header {
-        padding: 0 44.3%;
-    }
-}
-
-@media (min-width: 768px) {
-    .entertainment, .art { */
-        /* padding: 0 35.277%; */
-    /* }
-} */
