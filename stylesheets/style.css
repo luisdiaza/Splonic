@@ -9,7 +9,7 @@ body {
   width: 100%;
 }
 html {
-    height: 100%;
+    height: 100%; /*sets the dimensions of the html to cover the entire height of the browser*/
 }
 
 /* Global */
@@ -17,7 +17,6 @@ html {
 .container {
   width: 100%;
   max-width: 1200px;
-  /* padding: 0 10px 0 10px; */
   margin: auto; /*horizontally centers element within its container*/
 }
 
@@ -103,7 +102,7 @@ header nav {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     left: 0;
     top: 0;
     height: 100%;
@@ -134,6 +133,20 @@ header nav {
 .modal-body {
   padding: 10px 20px;
 }
+
+.consoles li {
+    display: inline-block;
+    margin-right: 2%;
+
+}
+
+.switch {
+    padding: 0;
+}
+/* .nintendo {
+    width: 30%;
+    height: 30%;
+} */
 
 .modal-footer {
   background: coral;
@@ -251,6 +264,14 @@ header nav {
 
 /* Media Queries */
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
+    nav{
+        display: none;
+    }
+
+    .sony, .xbox {
+        width: 100%;
+        height: 100%;
+    }
 
 }
