@@ -23,11 +23,10 @@ body {
 }
 
 .flipper-container {
-  display: block;
-  text-align: center;
-  z-index: 10;
-  margin-top: 40px;
-  @include perspective(1000);
+    text-align: center;
+    margin-right: 60px;
+    margin-top: 40px;
+    @include perspective(1000);
 }
 
 .flipper {
@@ -37,7 +36,6 @@ body {
   font-family: 'Montserrat';
   font-weight: 400;
   text-transform: uppercase;
-  z-index: 10;
   width: 11em; height: 4.5em;
   background-color: $dark;
   box-shadow: 0 3px 5px $dark;

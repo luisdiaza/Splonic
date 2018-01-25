@@ -33,6 +33,7 @@ const artistes = document.querySelector('.art');
 const arrow = document.querySelector('.flipper-container');
 const modal = document.querySelector('.modal');
 const closeBtn = document.querySelector('.closeBtn');
+const flipper = document.querySelector('.flipper')
 
 
 /* Event Handlers*/
@@ -60,7 +61,7 @@ unorderedList.addEventListener('click', function(e){
 
 //Opens modal when RSVP button is clicked
 arrow.addEventListener('click',function(e) {
-    // console.log(e.target.className);
+    console.log(e.target.className);
     if(e.target.className === "front-face") {
         //window.location.reload();
         // alert("Hello, I am an alert!");
